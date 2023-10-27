@@ -20,7 +20,7 @@
     <a href="https://en.wikipedia.org/wiki/Finland/"><img src="https://img.shields.io/badge/Made_with_%E2%9D%A4%20in-Finland-blue" alt="Made with love in: Finland"/></a>
     <br>
     <br>
-    Make <code>import</code> work without hassle.
+    Make relative <code>import</code> work without hassle.
     <br>
     <br>
     <pre>pip install <a href="https://github.com/hirsimaki-markus/importmonkey">importmonkey</a></pre>
