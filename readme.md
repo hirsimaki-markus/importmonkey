@@ -63,7 +63,8 @@ import yourproject
 ```
 
 # Why?
-Sometimes you need a specific structure to, for example, test and build a package from the same source.
+Sometimes you need a specific structure to, for example, test and build a package from the same source. So one must make
+a relative import, or a sibling import, or a parent import, or an absolute import.
 
 
 # Development details
