@@ -26,6 +26,8 @@
     <pre>pip install <a href="https://github.com/hirsimaki-markus/importmonkey">importmonkey</a></pre>
     <br>
     <br>
+    <br>
+    <br>
 </div>
 
 
@@ -33,20 +35,20 @@
 
 
 # What does it do?
-**Assume your project looks like this because you are building a new package for pip**
+**Here is your repository**
 ```
 yourproject
-├── src
-│   ├── yourproject
-│   │   └── __init__.py
-│   └── pyproject.toml
+├── source
+│   └── yourproject
+│       ├── __init__.py
+│       └── yourmodule.py
 └── test
-    └── test_yourproject.py
+    └── test_yourmodule.py
 ```
 
-**But now your tests can't import the project because of the structure; you always get one of**
+**Tests can't import the yourmodule.py; you will get one of**
 ```python
-ModuleNotFoundError: No module named 'myproject'
+ModuleNotFoundError: No module named 'yourmodule'
 ImportError: attempted relative import with no known parent package
 SystemError: Parent module '' not loaded, cannot perform relative import
 ```
@@ -54,11 +56,15 @@ SystemError: Parent module '' not loaded, cannot perform relative import
 **importmonkey will fix that**
 
 ```python
->>> # In test_yourproject.py
->>> from importmonkey import add_path
->>> add_path("../src")
->>> import yourproject
+# In test_yourmodule.py
+from importmonkey import add_path
+add_path("../source")
+import yourproject
 ```
+
+# Why?
+Sometimes you need a specific structure to, for example, test and build a package from the same source.
+
 
 # Development details
 <details><summary>Show details</summary>
