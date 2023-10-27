@@ -1,7 +1,7 @@
 <div align="center">
    <h1>
       <br>
-      <span style="font-size: 300%;">🐵</span>
+       🐵
       <br>
       importmonkey
       <br>
@@ -9,28 +9,18 @@
     </h1>
     <br>
     <br>
-    <a href="https://www.python.org/">
-      <img src="https://img.shields.io/badge/Python-3.12.0-blue?logo=python&logoColor=white" alt="Python ver: 3+" />
-    </a>
+    <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.12.0-blue?logo=python&logoColor=white" alt="Python ver: 3+"/></a>
     &nbsp;
-    <a href="https://www.python.org/">
-      <img src="https://img.shields.io/badge/Dependencies-None-blue" alt="Dependencies: None" />
-    </a>
+    <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Dependencies-None-blue" alt="Dependencies: None"/></a>
     &nbsp;
-    <a href="https://github.com/psf/black">
-      <img src="https://img.shields.io/badge/Style-black-000000" alt="Style: Black" />
-    </a>
+    <a href="https://github.com/psf/black"><img src="https://img.shields.io/badge/Style-black-000000" alt="Style: Black"/></a>
     &nbsp;
-    <a href="https://choosealicense.com/licenses/unlicense/">
-      <img src="https://img.shields.io/badge/Licence-The_Unlicence-purple" alt="Licence: The Unlicence" />
-    </a>
+    <a href="https://choosealicense.com/licenses/unlicense/"><img src="https://img.shields.io/badge/Licence-The_Unlicence-purple" alt="Licence: The Unlicence"/></a>
     &nbsp;
-    <a href="https://en.wikipedia.org/wiki/Finland/">
-      <img src="https://img.shields.io/badge/Made_with_%E2%9D%A4%20in-Finland-blue" alt="Made with love in: Finland" />
-    </a>
+    <a href="https://en.wikipedia.org/wiki/Finland/"><img src="https://img.shields.io/badge/Made_with_%E2%9D%A4%20in-Finland-blue" alt="Made with love in: Finland"/></a>
     <br>
     <br>
-    <p style="font-size: 90%;">The tool to just make your <code>import</code> work and fix that pesky <code>ImportError</code> or <code>ModuleNotFoundError</code> or <code>SystemError</code></p>
+    <p style="font-size: 90%;">A tool to just make your <code>import</code> work and to fix those pesky <code>ImportError</code>, <code>ModuleNotFoundError</code> and <code>SystemError</code> errors</p>
     <br>
     <pre>pip install <a href="https://github.com/hirsimaki-markus/importmonkey">importmonkey</a></pre>
     <br>
