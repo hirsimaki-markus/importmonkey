@@ -46,7 +46,7 @@ yourproject
     └── test.py
 ```
 
-**test.py can't find yourmodule.py; one of these happens on import:**
+**test.py can't find yourmodule.py:**
 ```python
 ModuleNotFoundError: No module named 'yourmodule'
 ImportError: attempted relative import with no known parent package
