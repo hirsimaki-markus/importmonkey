@@ -35,7 +35,7 @@
 
 
 # What does it do?
-**Here is your repository**
+**Here is your repository:**
 ```
 yourproject
 ├── source
@@ -43,20 +43,20 @@ yourproject
 │       ├── __init__.py
 │       └── yourmodule.py
 └── test
-    └── test_yourmodule.py
+    └── test.py
 ```
 
-**Tests can't import the yourmodule.py; you will get one of**
+**test.py can't find yourmodule.py; one of these happens on import:**
 ```python
 ModuleNotFoundError: No module named 'yourmodule'
 ImportError: attempted relative import with no known parent package
 SystemError: Parent module '' not loaded, cannot perform relative import
 ```
 
-**importmonkey will fix that**
+**importmonkey will fix that:**
 
 ```python
-# In test_yourmodule.py
+# In test.py
 from importmonkey import add_path
 add_path("../source")
 import yourproject
