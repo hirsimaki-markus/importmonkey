@@ -20,7 +20,8 @@
     <a href="https://en.wikipedia.org/wiki/Finland/"><img src="https://img.shields.io/badge/Made_with_%E2%9D%A4%20in-Finland-blue" alt="Made with love in: Finland"/></a>
     <br>
     <br>
-    <p style="font-size: 90%;">A tool to just make your <code>import</code> work and to fix those pesky <code>ImportError</code>, <code>ModuleNotFoundError</code> and <code>SystemError</code> errors</p>
+    Just the tool to make that <code>import</code> work without hassle.
+    <br>
     <br>
     <pre>pip install <a href="https://github.com/hirsimaki-markus/importmonkey">importmonkey</a></pre>
     <br>
