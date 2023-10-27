@@ -20,7 +20,7 @@
     <a href="https://en.wikipedia.org/wiki/Finland/"><img src="https://img.shields.io/badge/Made_with_%E2%9D%A4%20in-Finland-blue" alt="Made with love in: Finland"/></a>
     <br>
     <br>
-    Just the tool to make that <code>import</code> work without hassle.
+    Just the tool to make <code>import</code> work without hassle.
     <br>
     <br>
     <pre>pip install <a href="https://github.com/hirsimaki-markus/importmonkey">importmonkey</a></pre>
@@ -32,28 +32,35 @@
 
 
 
-# Lorem ipsum dolor sit amet
+# What does it do?
+**Assume your project looks like this because you are building a new package for pip**
+```
+yourproject
+├── src
+│   ├── yourproject
+│   │   └── __init__.py
+│   └── pyproject.toml
+└── test
+    └── test_yourproject.py
+```
+
+**But now your tests can't import the project because of the structure; you always get one of**
+```python
+ModuleNotFoundError: No module named 'myproject'
 ImportError: attempted relative import with no known parent package
-ModuleNotFoundError: No module named 'mymodule'
 SystemError: Parent module '' not loaded, cannot perform relative import
-depending on your project structure or maybe if using some exteral tools like pytest
-use cases: building a package, pytest, absolute imports
+```
 
+**importmonkey will fix that**
 
+```python
+>>> # In test_yourproject.py
+>>> from importmonkey import add_path
+>>> add_path("../src")
+>>> import yourproject
+```
 
-# Testing and linting
-lorem ipsum importmonkey$ black . importmonkey$ flake8 src/ test/
-
-# Releasing
-lorem ipsum
-
-# How to install
-latest version, specific version
-
-# How to use
-lorem ipsum
-
-# Development
+# Development details
 <details><summary>Show details</summary>
 
    **Linting**
