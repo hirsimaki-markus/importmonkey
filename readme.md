@@ -59,10 +59,17 @@ add_path("../src")
 import project
 ```
 
-# Why?
+<br>
+<br>
+<br>
+
+## Why?
 Sometimes you want a specific repo structure to test and build a package from the same
 files so you need a relative / sibling / parent import.
 
+<br>
+<br>
+<br>
 
 ## Development details
 <details><summary>Show details</summary>
