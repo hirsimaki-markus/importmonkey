@@ -1,11 +1,11 @@
 <div align="center">
-   <h1>
-      <br>
-       🐵
-      <br>
-      importmonkey
-      <br>
-      <br>
+    <h1>
+        <br>
+        🐵
+        <br>
+        importmonkey
+        <br>
+        <br>
     </h1>
     <br>
     <br>
@@ -70,24 +70,25 @@ a relative import, or a sibling import, or a parent import, or an absolute impor
 # Development details
 <details><summary>Show details</summary>
 
-   **Linting**
-   ```
-   asd
-   ```
+  **Linting**
+  ```bash
+  importmonkey$ black .
+  importmonkey$ flake8 src/ test/
+  ```
 
-   **Testing**
-   ```
-   asd
-   ```
+  **Testing**
+  ```bash
+  importmonkey$ python test/run_test_suite.py
+  ```
 
-   **Building**
-   ```
-   asd
-   ```
+  **Building**
+  ```
+  coming soon
+  ```
 
-   **Releasing**
-   ```
-   asd
-   ```
+  **Releasing**
+  ```
+  coming soon
+  ```
 
 </details>
