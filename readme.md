@@ -36,7 +36,7 @@
 
 # What does it do?
 **Here is your repository:**
-```bash
+```
 project
 ├─ src
 │   └─ project
