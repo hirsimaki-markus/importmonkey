@@ -27,14 +27,13 @@
     <br>
     <br>
     <br>
-    <br>
 </div>
 
 
 
 
 
-# What does it do?
+## What does it do?
 **Here is your repository:**
 ```
 ├─ src
@@ -65,7 +64,7 @@ Sometimes you want a specific repo structure to test and build a package from th
 files so you need a relative / sibling / parent import.
 
 
-# Development details
+## Development details
 <details><summary>Show details</summary>
 
   **Linting**
