@@ -1,1 +1,13 @@
-coming soon
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "importmonkey"
+dynamic = ["version"]
+
+[tool.setuptools]
+py-modules = ["importmonkey.__init__"]
+
+[tool.setuptools.dynamic]
+version = {attr = "importmonkey.__version__"}
