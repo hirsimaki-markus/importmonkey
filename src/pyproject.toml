@@ -2,18 +2,18 @@
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
+
 [project]
 name = "importmonkey"
-license = "The Unlicence"
+license = {file = "license.txt"}
 description = "Utility for adding new import paths."
-authors = ["Markus Hirsimäki"]
-project-url = "https://github.com/hirsimaki-markus/importmonkey"
-readme = "readme.md"
+readme = "file:../../readme.md"
+authors = [{name = "Markus Hirsimäki"}]
+urls = {url = "https://github.com/hirsimaki-markus/importmonkey"}
 dynamic = ["version"]
 
 
 [tool.setuptools]
 py-modules = ["importmonkey.__init__"]
+dynamic = {version = {attr = "importmonkey.__version__"}}
 
-[tool.setuptools.dynamic]
-version = {attr = "importmonkey.__version__"}
