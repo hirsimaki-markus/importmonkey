@@ -17,7 +17,7 @@
     &nbsp;
     <a href="https://choosealicense.com/licenses/unlicense/"><img src="https://img.shields.io/badge/Licence-The_Unlicence-purple" alt="Licence: The Unlicence"/></a>
     &nbsp;
-    <a href="https://en.wikipedia.org/wiki/Finland/"><img src="https://img.shields.io/badge/Made_with_%E2%9D%A4%20in-Finland-blue" alt="Made with love in: Finland"/></a>
+    <a href="https://en.wikipedia.org/wiki/Finland"><img src="https://img.shields.io/badge/Made_with_%E2%9D%A4%20in-Finland-blue" alt="Made with love in: Finland"/></a>
     <br>
     <br>
     Makes your relative <code>import</code> work without hassle.
