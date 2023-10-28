@@ -9,15 +9,15 @@
     </h1>
     <br>
     <br>
-    <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.12.0-blue?logo=python&logoColor=white" alt="Python ver: 3+"/></a>
+    <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.12.0-blue?logo=python&logoColor=white"/></a>
     &nbsp;
-    <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Dependencies-None-blue" alt="Dependencies: None"/></a>
+    <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Dependencies-None-blue"/></a>
     &nbsp;
-    <a href="https://github.com/psf/black"><img src="https://img.shields.io/badge/Style-black-000000" alt="Style: Black"/></a>
+    <a href="https://github.com/psf/black"><img src="https://img.shields.io/badge/Style-black-000000"/></a>
     &nbsp;
-    <a href="https://choosealicense.com/licenses/unlicense/"><img src="https://img.shields.io/badge/Licence-The_Unlicence-purple" alt="Licence: The Unlicence"/></a>
+    <a href="https://choosealicense.com/licenses/unlicense/"><img src="https://img.shields.io/badge/Licence-The_Unlicence-purple"/></a>
     &nbsp;
-    <a href="https://en.wikipedia.org/wiki/Finland"><img src="https://img.shields.io/badge/Made_with_%E2%9D%A4%20in-Finland-blue" alt="Made with love in: Finland"/></a>
+    <a href="https://en.wikipedia.org/wiki/Finland"><img src="https://img.shields.io/badge/Made_with_%E2%9D%A4%20in-Finland-blue"/></a>
     <br>
     <br>
     Makes your relative <code>import</code> work without hassle.
