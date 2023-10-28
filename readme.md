@@ -37,7 +37,6 @@
 # What does it do?
 **Here is your repository:**
 ```
-project
 ├─ src
 │   └─ project
 │       ├─ __init__.py
@@ -56,15 +55,14 @@ SystemError: Parent module '' not loaded, cannot perform relative import
 **importmonkey will fix that:**
 
 ```python
-# In test.py
-from importmonkey import add_path
+from importmonkey import add_path  # In test.py
 add_path("../src")
 import project
 ```
 
 # Why?
-Sometimes you need a specific structure to, for example, test and build a package from the same source. So one must make
-a relative import, or a sibling import, or a parent import, or an absolute import.
+Sometimes you want a specific repo structure to test and build a package from the same
+files so you need a relative / sibling / parent import.
 
 
 # Development details
