@@ -20,7 +20,9 @@
     <a href="https://en.wikipedia.org/wiki/Finland"><img src="https://img.shields.io/badge/Made_with_%E2%9D%A4%20in-Finland-blue"/></a>
     <br>
     <br>
-    Makes your relative <code>import</code> work without hassle.
+    An utility for adding new import paths to
+    <br>
+    make your relative <code>import</code> work without hassle.
     <br>
     <br>
     <pre>pip install <a href="https://github.com/hirsimaki-markus/importmonkey">importmonkey</a></pre>

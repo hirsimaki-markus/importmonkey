@@ -4,7 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "importmonkey"
+license = "The Unlicence"
+description = "Utility for adding new import paths."
+authors = ["Markus Hirsimäki"]
+project-url = "https://github.com/hirsimaki-markus/importmonkey"
+readme = "readme.md"
 dynamic = ["version"]
+
 
 [tool.setuptools]
 py-modules = ["importmonkey.__init__"]
