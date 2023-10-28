@@ -36,19 +36,19 @@
 
 # What does it do?
 **Here is your repository:**
-```
-yourproject
-├── source
-│   └── yourproject
-│       ├── __init__.py
-│       └── yourmodule.py
-└── test
-    └── test.py
+```bash
+project
+├─ src
+│   └─ project
+│       ├─ __init__.py
+│       └─ module.py
+└─ test
+    └─ test.py
 ```
 
-**test.py can't find yourmodule.py:**
+**test.py can't find module.py:**
 ```python
-ModuleNotFoundError: No module named 'yourmodule'
+ModuleNotFoundError: No module named 'module'
 ImportError: attempted relative import with no known parent package
 SystemError: Parent module '' not loaded, cannot perform relative import
 ```
@@ -58,8 +58,8 @@ SystemError: Parent module '' not loaded, cannot perform relative import
 ```python
 # In test.py
 from importmonkey import add_path
-add_path("../source")
-import yourproject
+add_path("../src")
+import project
 ```
 
 # Why?
