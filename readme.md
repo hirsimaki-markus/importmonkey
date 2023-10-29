@@ -89,7 +89,7 @@ files so you need a relative / sibling / parent import.
 
   **Building**
   ```
-  importmonkey$ python -m build --wheel --outdir ./release && rm -rf build/ && rm -rf src/importmonkey.egg-info/
+  importmonkey$ python -m build --wheel && rm -rf build/ && rm -rf src/importmonkey.egg-info/
   ```
 
   **Releasing**
