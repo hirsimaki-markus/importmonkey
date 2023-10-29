@@ -1,0 +1,4 @@
+# The versions used are set here but any newer version will probabl work.
+black==23.10.1
+build==1.0.3
+flake8==6.1.0

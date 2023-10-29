@@ -5,15 +5,15 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "importmonkey"
-license = {file = "license.txt"}
 description = "Utility for adding new import paths."
-readme = "file:../../readme.md"
-authors = [{name = "Markus Hirsimäki"}]
 urls = {url = "https://github.com/hirsimaki-markus/importmonkey"}
+authors = [{name = "Markus Hirsimäki"}]
+license = {file = "license.txt"}
+readme = "readme.md"
 dynamic = ["version"]
 
 
 [tool.setuptools]
 py-modules = ["importmonkey.__init__"]
 dynamic = {version = {attr = "importmonkey.__version__"}}
-
+package-dir = { "" = "src" }
