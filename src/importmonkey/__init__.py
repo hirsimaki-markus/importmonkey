@@ -11,7 +11,7 @@
 #     * Incrementing patch does not affect other numbers.
 #     * Never decrement a number except when resetting to zero like above.
 
-__version__ = "0.0.1"
+__version__ = "0.0.3"
 __all__ = ["add_path"]
 __author__ = "Markus Hirsimäki"
 __copyright__ = "This work is dedicated to public domain under The Unlicense."
@@ -25,19 +25,19 @@ import pathlib
 def add_path(new_path, allow_backslashes=False):
     """Adds a new path to sys.path relative to the caller's file's directory.
 
-    The basis for the path being added is the __file__ attribute of the
-    caller. If new_path argument is an absolute path, it will override
-    the directory found from __file__. You can inspect by simply doing
-    print(__file__).
+    The basis for the relative path being added is the __file__ attribute of
+    the caller. You can inspect the path by simply doing print(__file__). If
+    new_path argument is an absolute path, the base path from __file__ is
+    ignored.
 
     The path being added is returned so you can wrap the function call in
-    print to help find the correct path: print(add_path(mypath)).
+    print to help find the correct path to add: print(add_path(mypath)).
 
     Paths containing unicode characters are supported.
 
     Paths works differently in Windows and Unix-like systems. On Windows,
-    the drive is not reset when the argument is a rooted relative path
-    (e.g., "\foo").
+    the drive is not reset when the argument is a rooted relative path.
+    (e.g., "\\foo").
 
     See pathlib documentation for details about how paths will work at
     https://docs.python.org/3/library/pathlib.html
@@ -62,7 +62,7 @@ def add_path(new_path, allow_backslashes=False):
         new_path (str): The path to be added, relative to the caller's file.
         allow_backslashes (bool, optional): Allow backslashes in path. Default
             is False. You should only use this if you are certain you need
-            backslashes. Unix-style paths can be used on Windows.
+            backslashes. Unix-style paths can and should be used on Windows.
 
     Returns:
         str: The path that was added to sys.path.
