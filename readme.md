@@ -90,8 +90,8 @@ files so you need a relative / sibling / parent import.
   **Building & releasing**
   ```bash
   importmonkey$ python -m build --wheel && rm -rf build/ && rm -rf src/importmonkey.egg-info/
-  importmonkey$ python -m twine check dist/importmonkey-x.x.x-py3-none-any.whl
-  importmonkey$ python -m twine upload dist/importmonkey-x.x.x-py3-none-any.whl
+  importmonkey$ importmonkey$ python -m twine check dist/*
+  importmonkey$ python -m twine upload dist/*
   importmonkey$ rm -rf dist/
   ```
 
