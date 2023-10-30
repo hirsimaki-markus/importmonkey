@@ -78,8 +78,8 @@ files so you need a relative / sibling / parent import.
 
   **Linting**
   ```bash
-  importmonkey$ black .
-  importmonkey$ flake8 src/ test/
+  importmonkey$ python -m black .
+  importmonkey$ python -m flake8 src/ test/
   ```
 
   **Testing**
@@ -87,14 +87,12 @@ files so you need a relative / sibling / parent import.
   importmonkey$ python test/run_test_suite.py
   ```
 
-  **Building**
-  ```
+  **Building & releasing**
+  ```bash
   importmonkey$ python -m build --wheel && rm -rf build/ && rm -rf src/importmonkey.egg-info/
-  ```
-
-  **Releasing**
-  ```
-  coming soon
+  importmonkey$ python -m twine check dist/importmonkey-x.x.x-py3-none-any.whl
+  importmonkey$ python -m twine upload dist/importmonkey-x.x.x-py3-none-any.whl
+  importmonkey$ rm -rf dist/
   ```
 
 </details>
