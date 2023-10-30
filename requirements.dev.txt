@@ -1,4 +1,4 @@
-# The versions used are set here but any newer version will probabl work.
+# The versions used are set here but any newer version will probably work.
 black==23.10.1
 flake8==6.1.0
 build==1.0.3
