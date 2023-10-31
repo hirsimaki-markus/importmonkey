@@ -10,6 +10,25 @@ authors = [{name = "Markus Hirsimäki"}]
 license = {text = "The Unlicense"}
 readme = "readme.md"
 dynamic = ["version"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3.3",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: The Unlicense (Unlicense)",
+    "License :: Public Domain",
+    "Operating System :: OS Independent"
+]
 
 [tool.setuptools]
 py-modules = ["importmonkey.__init__"]
