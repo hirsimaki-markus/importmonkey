@@ -73,6 +73,7 @@ files so you need a relative / sibling / parent import.
 
 </details>
 
+
 <br>
 
 
@@ -86,6 +87,7 @@ files so you need a relative / sibling / parent import.
 ```
 
 </details>
+
 
 <br>
 
@@ -112,5 +114,18 @@ files so you need a relative / sibling / parent import.
   importmonkey$ python -m twine upload dist/*
   importmonkey$ rm -rf dist/
   ```
+
+</details>
+
+
+<br>
+
+
+## Additional licensing
+<details><summary>Show details</summary>
+
+This software is licensed under The Unlicense as the author's protest towards
+the modern copyright landscape. If you need a different lisence for legal or
+compability reasons, just ask.
 
 </details>
