@@ -2,6 +2,10 @@
 
 """This is importmonkey. See the only function, add_path, for documentation."""
 
+import sys
+import inspect
+import pathlib
+
 # Updating __version__ information:
 #     * Format is <major>.<minor>.<patch>
 #     * Never use leading or trailing zeroes in any of major/minor/patch.
@@ -17,10 +21,6 @@ __all__ = ["add_path"]
 __author__ = "Markus Hirsimäki"
 __copyright__ = "This work is dedicated to public domain under The Unlicense."
 __license__ = "The Unlicense (https://choosealicense.com/licenses/unlicense/)"
-
-import sys
-import inspect
-import pathlib
 
 
 def add_path(new_path, allow_backslashes=False):
