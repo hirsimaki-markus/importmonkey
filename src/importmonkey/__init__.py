@@ -12,7 +12,7 @@
 #     * Incrementing patch does not affect other numbers.
 #     * Never decrement a number except when resetting to zero like above.
 
-__version__ = "0.1.0"
+__version__ = "1.0.0"
 __all__ = ["add_path"]
 __author__ = "Markus Hirsimäki"
 __copyright__ = "This work is dedicated to public domain under The Unlicense."
