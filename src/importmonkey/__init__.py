@@ -132,9 +132,5 @@ def add_path(new_path, allow_backslashes=False):
 
     final_path_str = str(final_path)
 
-    if final_path_str not in sys.path:
-        sys.path.append(final_path_str)
-    else:
-        msg = f"The path {repr(final_path_str)} is already found in sys.path."
-        raise ValueError(msg)
+    sys.path.append(final_path_str)
     return final_path_str
