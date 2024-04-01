@@ -2,9 +2,9 @@
 
 """This is importmonkey. See the only function, add_path, for documentation."""
 
-import sys
 import inspect
 import pathlib
+import sys
 
 # Updating __version__ information:
 #     * Format is <major>.<minor>.<patch>
@@ -16,7 +16,7 @@ import pathlib
 #     * Incrementing patch does not affect other numbers.
 #     * Never decrement a number except when resetting to zero like above.
 
-__version__ = "1.0.0"
+__version__ = "2.0.0"
 __all__ = ["add_path"]
 __author__ = "Markus Hirsimäki"
 __copyright__ = "This work is dedicated to public domain under The Unlicense."
@@ -66,12 +66,12 @@ def add_path(new_path, allow_backslashes=False):
             backslashes. Unix-style paths can and should be used on Windows.
 
     Returns:
-        str: The path that was added to sys.path.
+        str: The path that was added to sys.path or empty string if the path
+            was already found in sys.path.
 
     Raises:
         TypeError: If new_path or allow_backslashes has wrong type.
         ValueError: If new_path does not resolve to a valid directory.
-        ValueError: If new_path already exists in sys.path.
         FileNotFoundError: If the caller's filepath can not be determined.
         RuntimeError: For unexpected exceptions.
     """
@@ -134,7 +134,6 @@ def add_path(new_path, allow_backslashes=False):
 
     if final_path_str not in sys.path:
         sys.path.append(final_path_str)
+        return final_path_str
     else:
-        msg = f"The path {repr(final_path_str)} is already found in sys.path."
-        raise ValueError(msg)
-    return final_path_str
+        return ""
