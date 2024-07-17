@@ -10,7 +10,7 @@ import sys
 # Trailing/leading zeroes are not allowed. Lone zeroes (such as in 0.1.0) are allowed.
 # When incrementing any of major, minor, patch, reset other numbers after it to zero.
 # A number with trailing zero is skipped (eg. 0.10.0) and incremented more (eg. 0.11.0).
-__version__ = "2.1.0"
+__version__ = "2.1.1"
 __all__ = ["add_path"]
 __author__ = "Markus Hirsimäki"
 __copyright__ = "This work is dedicated to public domain under The Unlicense."
@@ -74,10 +74,11 @@ def add_path(new_path, allow_backslashes=False):
 
     try:  # Using caller's frame to get caller's __file__ as a base for relative path.
         caller_file = inspect.currentframe().f_globals["__file__"]
-    except Exception:  # Can't find frame or __file__ not set. Use current working dir.
-        caller_file = str(pathlib.Path(".").resolve())
+        base_path = pathlib.Path(caller_file).parent
+    except (AttributeError, KeyError):  # Can't find frame or __file__ not set.
+        base_path = pathlib.Path.cwd()  # Use current working dir as fallback.
 
-    path_to_add = (pathlib.Path(caller_file).parent / new_path).resolve()
+    path_to_add = (base_path / new_path).resolve()
 
     if not path_to_add.is_dir():
         raise ValueError(f"{str(path_to_add)} is not an existing directory.")
