@@ -1,11 +1,10 @@
 [build-system]
-requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
+requires = ["setuptools"]
 
 [project]
 name = "importmonkey"
 description = "Utility for adding new import paths."
-urls = {homepage = "https://github.com/hirsimaki-markus/importmonkey", license = "https://choosealicense.com/licenses/unlicense/"}
 authors = [{name = "Markus Hirsimäki"}]
 license = {text = "The Unlicense"}
 readme = "readme.md"
@@ -13,24 +12,20 @@ dynamic = ["version"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Programming Language :: Python",
-    "Intended Audience :: Developers",
-    "Topic :: Software Development :: Libraries :: Python Modules",
-    "Programming Language :: Python :: 3.3",
-    "Programming Language :: Python :: 3.4",
-    "Programming Language :: Python :: 3.5",
-    "Programming Language :: Python :: 3.6",
-    "Programming Language :: Python :: 3.7",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
     "License :: OSI Approved :: The Unlicense (Unlicense)",
     "License :: Public Domain",
     "Operating System :: OS Independent"
 ]
 
+[project.optional-dependencies]
+dev = ["build", "twine", "ruff"]
+
+[project.urls]
+homepage = "https://github.com/hirsimaki-markus/importmonkey"
+issues = "https://github.com/hirsimaki-markus/importmonkey/issues"
+license = "https://choosealicense.com/licenses/unlicense/"
+
 [tool.setuptools]
-py-modules = ["importmonkey.__init__"]
-dynamic = {version = {attr = "importmonkey.__version__"}}
+packages = ["importmonkey"]
 package-dir = { "" = "src" }
+dynamic = { version = {attr = "importmonkey.__version__" } }
