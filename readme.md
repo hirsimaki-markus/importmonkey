@@ -82,3 +82,4 @@ importmonkey$ python -m twine check dist/*
 importmonkey$ python -m twine upload dist/*
 importmonkey$ rm -rf dist/
 ```
+</details>
